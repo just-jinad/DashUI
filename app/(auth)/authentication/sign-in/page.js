@@ -45,7 +45,9 @@ const SignIn = () => {
                 <div>
                   {/* Button */}
                   <div className="d-grid">
+                    <Link href="/">
                     <Button variant="primary" type="submit">Sign In</Button>
+                    </Link>
                   </div>
                   <div className="d-md-flex justify-content-between mt-4">
                     <div className="mb-2 mb-md-0">

@@ -4,11 +4,17 @@
 import { Row, Col, Card, Form, Button, Image } from 'react-bootstrap';
 import Link from 'next/link';
 
+
 // import hooks
 import useMounted from 'hooks/useMounted';
 
+
+
 const SignUp = () => {
   const hasMounted = useMounted();
+
+ 
+
   return (
     <Row className="align-items-center justify-content-center g-0 min-vh-100">
       <Col xxl={4} lg={6} md={8} xs={12} className="py-8 py-xl-0">
@@ -26,25 +32,25 @@ const SignUp = () => {
               {/* Username */}
               <Form.Group className="mb-3" controlId="username">
                 <Form.Label>Username or email</Form.Label>
-                <Form.Control type="text" name="username" placeholder="User Name" required="" />
+                <Form.Control type="text" name="username" placeholder="User Name" required/>
               </Form.Group>
 
               {/* Email */}
               <Form.Group className="mb-3" controlId="email">
                 <Form.Label>Email</Form.Label>
-                <Form.Control type="email" name="email" placeholder="Enter address here" required="" />
+                <Form.Control type="email" name="email" placeholder="Enter address here" required />
               </Form.Group>
 
               {/* Password */}
               <Form.Group className="mb-3" controlId="password">
                 <Form.Label>Password</Form.Label>
-                <Form.Control type="password" name="password" placeholder="**************" required="" />
+                <Form.Control type="password" name="password" placeholder="**************" required/>
               </Form.Group>
 
               {/* Confirm Password */}
               <Form.Group className="mb-3" controlId="confirm-password">
                 <Form.Label>Confirm Password</Form.Label>
-                <Form.Control type="password" name="confirm-password" placeholder="**************" required="" />
+                <Form.Control type="password" name="confirm-password" placeholder="**************" required />
               </Form.Group>
 
               {/* Checkbox */}
@@ -60,7 +66,9 @@ const SignUp = () => {
               <div>
                 {/* Button */}
                 <div className="d-grid">
-                  <Button variant="primary" type="submit">Create Free Account</Button>
+                  <Link href="/authentication/sign-in">
+                  <Button variant="primary">Create Free Account</Button>
+                  </Link>
                 </div>
                 <div className="d-md-flex justify-content-between mt-4">
                   <div className="mb-2 mb-md-0">
